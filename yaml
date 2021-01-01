@@ -1,0 +1,47 @@
+@ Key Value Pair:
+   key   Value
+  Fruit: Apple
+  Veggies: Carrot
+  Liquid: Water
+  Meat: Chicken
+
+@ Array/lists
+  Fruit:
+  -  Orange
+  -  Apple
+  -  banana
+  
+  Veggies:  #indicates that it is an element of an array
+  -  carrots
+  -  Califlower
+  -  tomato
+
+@ Dictionary/Map. #group of properties grouped 2gether under an item
+  Banana:
+    Calories: 105
+    Fat: .4g
+    Carbs: 27g
+    
+  Grapes
+    Calories: 62g
+    Fat: .3 g
+    Carbs: 16g
+
+@Spaces must be same under each property
+
+@ Key Value/Dictionary/lists
+   Fruit:
+      - Banana:
+           Calories: 105. 
+           Fat: .4g
+           Carbs: 27g
+           
+      - Grapes
+           Calories: 62g
+           Fat: .3 g
+           Carbs: 16g
+
+Dictionary vs list vs list of dict
+Dictionary:  same type of object like cars.  
+list of dict:  list additional info about the same object 
+    
