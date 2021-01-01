@@ -1,0 +1,32 @@
+System:  action to be performed at the system level like: user, group, hostname, service, ping, mount, systemd etc
+
+Commands: run commands or script 
+  tasks:
+   - name: adduser
+     command: useradd
+     
+   - name: cat this
+     command: cat /etc/passwd # or below using chdir parameter to change dir first
+     
+   - name: cat this
+     command: cat /etc/passwd chdir=/etc
+     
+
+File: change files like archiving, copy, find, acls
+
+Database: mysql, mongodb,
+ 
+Cloud:  AWS, Azure, docker, and lots more to manage cloud resources
+
+Windows:  use ansible in a windows env.  win_copy, win_file, win_shell, win_msi
+
+script
+
+lineinfile: find a line in a file and replace it or add it. like append.  Idempotent
+    name: add dns server to resolv.conf
+    tasks:
+      - lineinfile:
+        path: /etc/resolv.conf
+        line: 'nameserver 10.1.250.10'
+        
+
