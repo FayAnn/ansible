@@ -1,0 +1,21 @@
+task- action to be taken on host/s. examples:
+  run a script
+  install package
+  create users
+  reboot
+ 
+ tasks:
+   - name: create user
+  
+modules:  the different action run by tasks  example
+  command: adduser
+  script: test_script.sh
+  yum: 
+  service
+  
+  tasks:
+   - name: create user
+     command: useradd
+ 
+ Run the playbook
+ ansible-playbook playbookname.yml
