@@ -1,0 +1,15 @@
+Step 1. enable ssh connection between controller and hosts
+  ssh-keygen
+  ssh-copy-id ubuntu@54.130.50.23
+
+Step 2. set up hosts inventory file
+  sudo vi /etc/ansible/hosts. #then add
+  
+  [servers]
+  test1 ansible_ssh_host=34.217.68.172
+  test2 ansible_ssh_host=52.13.124.244
+  
+Note:  test1/2 can be replaced with other aliases  
+  Type these to test
+    ansible -m ping all
+    ansible -m ping servers
