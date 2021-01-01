@@ -1,0 +1,13 @@
+name:   create users
+hosts:  localhost
+tasks:
+  - users: name:joe  state=present. 
+  - users: name:mary  state=present
+  - users: name:fay  state=present. or 
+
+tasks:
+  - users: name:{{ item }}  state=present
+    loop: 
+      - joe
+      - mary
+      - fay
